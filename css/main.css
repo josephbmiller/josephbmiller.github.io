@@ -4,6 +4,10 @@
 body {
   margin: 0;
 }
+#main {
+  max-width: 1200px;
+  margin: auto;
+}
 ul.navbar {
   list-style-type: none;
   margin: 0;
@@ -31,4 +35,21 @@ ul.navbar li a:hover {
   flex: 1;
   padding: 1em;
   border: solid;
+}
+#skills ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#skills img {
+  padding: 8px;
+  height: 64px;
+  width: 64px;
+}
+@media only screen and (max-width: 600px) {
+  #skills {
+    flex-flow: column nowrap;
+  }
 }
